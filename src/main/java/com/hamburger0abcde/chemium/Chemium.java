@@ -33,6 +33,7 @@ public class Chemium
     private static final Logger LOGGER = LogUtils.getLogger();
 
     private static final Map<Item, String> ELEMENT_SYMBOLS = new HashMap<>();
+    private static final Map<Item, String> MELTING_POINTS = new HashMap<>();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -50,6 +51,7 @@ public class Chemium
         ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
 
         modEventBus.addListener(this::setupElementSymbols);
+        modEventBus.addListener(this::setupMeltingPoints);
     }
 
     private void setupElementSymbols(FMLCommonSetupEvent event) {
@@ -65,6 +67,10 @@ public class Chemium
 
         ELEMENT_SYMBOLS.put(Items.GLASS, "Na₂O·CaO·6SiO₂");
         ELEMENT_SYMBOLS.put(Items.GRAY_STAINED_GLASS, "Na₂O·CaO·6SiO₂");
+    }
+
+    private void setupMeltingPoints(FMLCommonSetupEvent event) {
+        MELTING_POINTS.put(Items.IRON_INGOT, "1539°C");
     }
 
     @SubscribeEvent
