@@ -33,7 +33,7 @@ public class Chemium
     private static final Logger LOGGER = LogUtils.getLogger();
 
     private static final Map<Item, String> ELEMENT_SYMBOLS = new HashMap<>();
-    private static final Map<Item, String> MELTING_POINTS = new HashMap<>();
+    private static final Map<Item, Integer> MELTING_POINTS = new HashMap<>();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -70,7 +70,7 @@ public class Chemium
     }
 
     private void setupMeltingPoints(FMLCommonSetupEvent event) {
-        MELTING_POINTS.put(Items.IRON_INGOT, "1539°C");
+        MELTING_POINTS.put(Items.IRON_INGOT, 1539);
     }
 
     @SubscribeEvent
@@ -84,9 +84,24 @@ public class Chemium
             if (symbol != null && !symbol.isEmpty()) {
                 event.getToolTip().add(Component.literal(symbol)
                         .withStyle(ChatFormatting.GOLD, ChatFormatting.ITALIC));
-
-                LOGGER.info("[Chemium] Added element symbol {} to {}", symbol, item);
             }
+        }
+        if (MELTING_POINTS.containsKey(stack.getItem())) {
+            int meltingPoint = MELTING_POINTS.get(item);
+
+            ChatFormatting color = ChatFormatting.YELLOW;
+            if (meltingPoint > 2000) {
+                color = ChatFormatting.RED;
+            } else if (meltingPoint < 500) {
+                color = ChatFormatting.AQUA;
+            }
+
+            Component meltingPointText = Component
+                    .translatable("tooltip.chemium.melting_point")
+                    .append(": " + meltingPoint + "°C")
+                    .withStyle(color, ChatFormatting.ITALIC);
+
+            event.getToolTip().add(meltingPointText);
         }
     }
 }
