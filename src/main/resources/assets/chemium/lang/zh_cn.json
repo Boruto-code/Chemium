@@ -1,7 +1,16 @@
 {
   "tooltip.chemium.melting_point": "熔点",
   "item.chemium.steel_ingot": "钢锭",
-  "item.chemium.lithium_ingot": "锂锭",
+  "item.chemium.aluminium_ingot": "铝锭",
   "item.chemium.beryllium_ingot": "铍锭",
+  "item.chemium.black_phosphorus_ingot": "黑磷锭",
+  "item.chemium.boron_ingot": "硼锭",
+  "item.chemium.lithium_ingot": "锂锭",
+  "item.chemium.magnesium_ingot": "镁锭",
+  "item.chemium.red_phosphorus_ingot": "红磷锭",
+  "item.chemium.silicon_ingot": "硅锭",
+  "item.chemium.sodium_ingot": "钠锭",
+  "item.chemium.violet_phosphorus_ingot": "紫磷锭",
+  "item.chemium.yellow_phosphorus_ingot": "黄磷锭",
   "itemGroup.chemium": "化学：元素 & 材料"
 }

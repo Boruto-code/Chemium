@@ -2,7 +2,15 @@
   "tooltip.chemium.melting_point": "Melting Point",
   "item.chemium.steel_ingot": "Steel Ingot",
   "item.chemium.aluminium_ingot": "Aluminium Ingot",
-  "item.chemium.lithium_ingot": "Lithium Ingot",
   "item.chemium.beryllium_ingot": "Beryllium Ingot",
+  "item.chemium.black_phosphorus_ingot": "Black Phosphorus Ingot",
+  "item.chemium.boron_ingot": "Boron Ingot",
+  "item.chemium.lithium_ingot": "Lithium Ingot",
+  "item.chemium.magnesium_ingot": "Magnesium Ingot",
+  "item.chemium.red_phosphorus_ingot": "Red Phosphorus Ingot",
+  "item.chemium.silicon_ingot": "Silicon Ingot",
+  "item.chemium.sodium_ingot": "Sodium Ingot",
+  "item.chemium.violet_phosphorus_ingot": "Violet Phosphorus Ingot",
+  "item.chemium.yellow_phosphorus_ingot": "Yellow Phosphorus Ingot",
   "itemGroup.chemium": "Chemium Element & Stuff"
 }
