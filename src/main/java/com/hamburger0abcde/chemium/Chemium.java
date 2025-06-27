@@ -1,6 +1,6 @@
 package com.hamburger0abcde.chemium;
 
-import com.hamburger0abcde.chemium.client.creative_tab.ModCreativeModeTabs;
+import com.hamburger0abcde.chemium.client.creativetab.ModCreativeModeTabs;
 import com.hamburger0abcde.chemium.common.item.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -33,7 +33,7 @@ public class Chemium
     private static final Logger LOGGER = LogUtils.getLogger();
 
     private static final Map<Item, String> ELEMENT_SYMBOLS = new HashMap<>();
-    private static final Map<Item, Integer> MELTING_POINTS = new HashMap<>();
+    private static final Map<Item, Double> MELTING_POINTS = new HashMap<>();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -55,22 +55,44 @@ public class Chemium
     }
 
     private void setupElementSymbols(FMLCommonSetupEvent event) {
-        ELEMENT_SYMBOLS.put(ModItems.BERYLLIUM_INGOT.get(), "Be");
+        // Elements
         ELEMENT_SYMBOLS.put(ModItems.LITHIUM_INGOT.get(), "Li");
-        ELEMENT_SYMBOLS.put(Items.IRON_INGOT, "Fe");
-        ELEMENT_SYMBOLS.put(Items.GOLD_INGOT, "Au");
+        ELEMENT_SYMBOLS.put(ModItems.BERYLLIUM_INGOT.get(), "Be");
+        ELEMENT_SYMBOLS.put(ModItems.BORON_INGOT.get(), "B");
         ELEMENT_SYMBOLS.put(Items.COAL, "C");
         ELEMENT_SYMBOLS.put(Items.DIAMOND, "C");
+        ELEMENT_SYMBOLS.put(ModItems.SODIUM_INGOT.get(), "Na");
+        ELEMENT_SYMBOLS.put(ModItems.MAGNESIUM_INGOT.get(), "Mg");
+        ELEMENT_SYMBOLS.put(ModItems.ALUMINIUM_INGOT.get(), "Al");
+        ELEMENT_SYMBOLS.put(ModItems.SILICON_INGOT.get(), "Si");
+        ELEMENT_SYMBOLS.put(ModItems.BLACK_PHOSPHORUS_INGOT.get(), "P");
+        ELEMENT_SYMBOLS.put(ModItems.RED_PHOSPHORUS_INGOT.get(), "P");
+        ELEMENT_SYMBOLS.put(ModItems.VIOLET_PHOSPHORUS_INGOT.get(), "P");
+        ELEMENT_SYMBOLS.put(ModItems.YELLOW_PHOSPHORUS_INGOT.get(), "P");
+        ELEMENT_SYMBOLS.put(Items.IRON_INGOT, "Fe");
         ELEMENT_SYMBOLS.put(Items.COPPER_INGOT, "Cu");
+        ELEMENT_SYMBOLS.put(Items.GOLD_INGOT, "Au");
 
         ELEMENT_SYMBOLS.put(Items.EMERALD, "Be₃Al₂(SiO₃)₆");
 
+        // Glass
         ELEMENT_SYMBOLS.put(Items.GLASS, "Na₂O·CaO·6SiO₂");
         ELEMENT_SYMBOLS.put(Items.GRAY_STAINED_GLASS, "Na₂O·CaO·6SiO₂");
+        ELEMENT_SYMBOLS.put(Items.BLACK_STAINED_GLASS, "Na₂O·CaO·6SiO₂");
     }
 
     private void setupMeltingPoints(FMLCommonSetupEvent event) {
-        MELTING_POINTS.put(Items.IRON_INGOT, 1539);
+        MELTING_POINTS.put(ModItems.LITHIUM_INGOT.get(), 180.5);
+        MELTING_POINTS.put(ModItems.BERYLLIUM_INGOT.get(), 1278.0);
+        MELTING_POINTS.put(ModItems.BORON_INGOT.get(), 2076.0);
+        MELTING_POINTS.put(ModItems.SODIUM_INGOT.get(), 97.72);
+        MELTING_POINTS.put(ModItems.MAGNESIUM_INGOT.get(), 648.8);
+        MELTING_POINTS.put(ModItems.ALUMINIUM_INGOT.get(), 660.0);
+        MELTING_POINTS.put(ModItems.SILICON_INGOT.get(), 1414.1);
+        MELTING_POINTS.put(ModItems.RED_PHOSPHORUS_INGOT.get(), 590.0);
+        MELTING_POINTS.put(ModItems.VIOLET_PHOSPHORUS_INGOT.get(), 590.0);
+        MELTING_POINTS.put(ModItems.YELLOW_PHOSPHORUS_INGOT.get(), 44.1);
+        MELTING_POINTS.put(Items.IRON_INGOT, 1539.0);
     }
 
     @SubscribeEvent
@@ -87,13 +109,15 @@ public class Chemium
             }
         }
         if (MELTING_POINTS.containsKey(stack.getItem())) {
-            int meltingPoint = MELTING_POINTS.get(item);
+            double meltingPoint = MELTING_POINTS.get(item);
 
             ChatFormatting color = ChatFormatting.YELLOW;
             if (meltingPoint > 2000) {
                 color = ChatFormatting.RED;
-            } else if (meltingPoint < 500) {
+            } else if (meltingPoint < 500 && meltingPoint > 0) {
                 color = ChatFormatting.AQUA;
+            } else if (meltingPoint <= 0) {
+                color = ChatFormatting.DARK_BLUE;
             }
 
             Component meltingPointText = Component

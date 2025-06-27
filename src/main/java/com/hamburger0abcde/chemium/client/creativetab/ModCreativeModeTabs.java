@@ -1,14 +1,11 @@
-package com.hamburger0abcde.chemium.client.creative_tab;
+package com.hamburger0abcde.chemium.client.creativetab;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Supplier;
 
 import static com.hamburger0abcde.chemium.Chemium.MODID;
 import static com.hamburger0abcde.chemium.common.item.ModItems.*;
@@ -25,9 +22,18 @@ public class ModCreativeModeTabs {
                             .withTabsBefore(CreativeModeTabs.COMBAT)
                             .icon(() -> STEEL_INGOT.get().getDefaultInstance())
                             .displayItems((parameters, output) -> {
-                                output.accept(STEEL_INGOT.get());
-                                output.accept(LITHIUM_INGOT.get());
+                                output.accept(ALUMINIUM_INGOT.get());
                                 output.accept(BERYLLIUM_INGOT.get());
+                                output.accept(BLACK_PHOSPHORUS_INGOT.get());
+                                output.accept(BORON_INGOT.get());
+                                output.accept(LITHIUM_INGOT.get());
+                                output.accept(MAGNESIUM_INGOT.get());
+                                output.accept(RED_PHOSPHORUS_INGOT.get());
+                                output.accept(SILICON_INGOT.get());
+                                output.accept(SODIUM_INGOT.get());
+                                output.accept(STEEL_INGOT.get());
+                                output.accept(VIOLET_PHOSPHORUS_INGOT.get());
+                                output.accept(YELLOW_PHOSPHORUS_INGOT.get());
                             }).build()
             );
 }
