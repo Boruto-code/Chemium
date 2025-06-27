@@ -26,14 +26,27 @@ public class ModCreativeModeTabs {
                                 output.accept(BERYLLIUM_INGOT.get());
                                 output.accept(BLACK_PHOSPHORUS_INGOT.get());
                                 output.accept(BORON_INGOT.get());
+                                output.accept(CALCIUM_INGOT.get());
+                                output.accept(CHROMIUM_INGOT.get());
+                                output.accept(COBALT_INGOT.get());
+                                output.accept(GALLIUM_INGOT.get());
+                                output.accept(GERMANIUM_INGOT.get());
                                 output.accept(LITHIUM_INGOT.get());
                                 output.accept(MAGNESIUM_INGOT.get());
+                                output.accept(MANGANESE_INGOT.get());
+                                output.accept(NICKEL_INGOT.get());
+                                output.accept(POTASSIUM_INGOT.get());
                                 output.accept(RED_PHOSPHORUS_INGOT.get());
+                                output.accept(SCANDIUM_INGOT.get());
                                 output.accept(SILICON_INGOT.get());
                                 output.accept(SODIUM_INGOT.get());
                                 output.accept(STEEL_INGOT.get());
+                                output.accept(SULFUR_INGOT.get());
+                                output.accept(TITANIUM_INGOT.get());
+                                output.accept(VANADIUM_INGOT.get());
                                 output.accept(VIOLET_PHOSPHORUS_INGOT.get());
                                 output.accept(YELLOW_PHOSPHORUS_INGOT.get());
+                                output.accept(ZINC_INGOT.get());
                             }).build()
             );
 }

@@ -69,8 +69,21 @@ public class Chemium
         ELEMENT_SYMBOLS.put(ModItems.RED_PHOSPHORUS_INGOT.get(), "P");
         ELEMENT_SYMBOLS.put(ModItems.VIOLET_PHOSPHORUS_INGOT.get(), "P");
         ELEMENT_SYMBOLS.put(ModItems.YELLOW_PHOSPHORUS_INGOT.get(), "P");
+        ELEMENT_SYMBOLS.put(ModItems.SULFUR_INGOT.get(), "S");
+        ELEMENT_SYMBOLS.put(ModItems.POTASSIUM_INGOT.get(), "K");
+        ELEMENT_SYMBOLS.put(ModItems.CALCIUM_INGOT.get(), "Ca");
+        ELEMENT_SYMBOLS.put(ModItems.SCANDIUM_INGOT.get(), "Sc");
+        ELEMENT_SYMBOLS.put(ModItems.TITANIUM_INGOT.get(), "Ti");
+        ELEMENT_SYMBOLS.put(ModItems.VANADIUM_INGOT.get(), "V");
+        ELEMENT_SYMBOLS.put(ModItems.CHROMIUM_INGOT.get(), "Cr");
+        ELEMENT_SYMBOLS.put(ModItems.MANGANESE_INGOT.get(), "Mn");
         ELEMENT_SYMBOLS.put(Items.IRON_INGOT, "Fe");
+        ELEMENT_SYMBOLS.put(ModItems.COBALT_INGOT.get(), "Co");
+        ELEMENT_SYMBOLS.put(ModItems.NICKEL_INGOT.get(), "Ni");
         ELEMENT_SYMBOLS.put(Items.COPPER_INGOT, "Cu");
+        ELEMENT_SYMBOLS.put(ModItems.ZINC_INGOT.get(), "Zn");
+        ELEMENT_SYMBOLS.put(ModItems.GALLIUM_INGOT.get(), "Ga");
+        ELEMENT_SYMBOLS.put(ModItems.GERMANIUM_INGOT.get(), "Ge");
         ELEMENT_SYMBOLS.put(Items.GOLD_INGOT, "Au");
 
         ELEMENT_SYMBOLS.put(Items.EMERALD, "Be₃Al₂(SiO₃)₆");
@@ -92,7 +105,21 @@ public class Chemium
         MELTING_POINTS.put(ModItems.RED_PHOSPHORUS_INGOT.get(), 590.0);
         MELTING_POINTS.put(ModItems.VIOLET_PHOSPHORUS_INGOT.get(), 590.0);
         MELTING_POINTS.put(ModItems.YELLOW_PHOSPHORUS_INGOT.get(), 44.1);
+        MELTING_POINTS.put(ModItems.SULFUR_INGOT.get(), 112.8);
+        MELTING_POINTS.put(ModItems.POTASSIUM_INGOT.get(), 63.25);
+        MELTING_POINTS.put(ModItems.CALCIUM_INGOT.get(), 839.0);
+        MELTING_POINTS.put(ModItems.SCANDIUM_INGOT.get(), 1541.0);
+        MELTING_POINTS.put(ModItems.TITANIUM_INGOT.get(), 1668.0);
+        MELTING_POINTS.put(ModItems.VANADIUM_INGOT.get(), 1917.0);
+        MELTING_POINTS.put(ModItems.CHROMIUM_INGOT.get(), 1907.0);
+        MELTING_POINTS.put(ModItems.MANGANESE_INGOT.get(), 1244.0);
         MELTING_POINTS.put(Items.IRON_INGOT, 1539.0);
+        MELTING_POINTS.put(ModItems.COBALT_INGOT.get(), 1500.0);
+        MELTING_POINTS.put(ModItems.NICKEL_INGOT.get(), 1453.0);
+        MELTING_POINTS.put(Items.COPPER_INGOT, 1083.4);
+        MELTING_POINTS.put(ModItems.ZINC_INGOT.get(), 419.53);
+        MELTING_POINTS.put(ModItems.GALLIUM_INGOT.get(), 29.76);
+        MELTING_POINTS.put(ModItems.GERMANIUM_INGOT.get(), 937.0);
     }
 
     @SubscribeEvent
