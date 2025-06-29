@@ -26,6 +26,7 @@ repositories { RepositoryHandler handler ->
     exclusiveRepo(handler, "https://maven.blamejared.com", filter -> {
         filter.includeGroup('mezz.jei')
     })
+    exclusiveRepo(handler, 'https://www.cursemaven.com', 'curse.maven')
 }
 
 base {
