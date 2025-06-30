@@ -22,13 +22,6 @@ tasks.named('wrapper', Wrapper).configure {
 version = mod_version
 group = mod_group_id
 
-repositories { RepositoryHandler handler ->
-    exclusiveRepo(handler, "https://maven.blamejared.com", filter -> {
-        filter.includeGroup('mezz.jei')
-    })
-    exclusiveRepo(handler, 'https://www.cursemaven.com', 'curse.maven')
-}
-
 base {
     archivesName = mod_id
 }
@@ -137,9 +130,20 @@ static void exclusiveRepo(RepositoryHandler handler, String url, Consumer<Inclus
     }
 }
 
+repositories { RepositoryHandler handler ->
+    exclusiveRepo(handler, "https://maven.blamejared.com", filter -> {
+        filter.includeGroup('mezz.jei')
+    })
+    exclusiveRepo(handler, 'https://www.cursemaven.com', 'curse.maven')
+    // exclusiveRepo(handler, 'https://maven2.bai.lol', 'lol.bai', 'mcp.mobius.waila')
+}
+
 dependencies {
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
     localRuntime("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+
+    // compileOnly("mcp.mobius.waila:wthit-api:forge-${wthit_version}")
+    // localRuntime("mcp.mobius.waila:wthit:forge-${wthit_version}")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
