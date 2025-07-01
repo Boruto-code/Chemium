@@ -1,5 +1,6 @@
 package com.hamburger0abcde.chemium.common.item;
 
+import net.minecraft.world.damagesource.DamageEffects;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -14,6 +15,14 @@ public class ModItems {
             "aluminium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> ANTIMONY_INGOT = ITEMS.register(
+            "antimony_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> BARIUM_INGOT = ITEMS.register(
+            "barium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> BERYLLIUM_INGOT = ITEMS.register(
             "beryllium_ingot",
             () -> new IngotItem(new Item.Properties())
@@ -26,8 +35,16 @@ public class ModItems {
             "boron_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> CADMIUM_INGOT = ITEMS.register(
+            "cadmium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> CALCIUM_INGOT = ITEMS.register(
             "calcium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> CESIUM_INGOT = ITEMS.register(
+            "cesium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> CHROMIUM_INGOT = ITEMS.register(
@@ -46,6 +63,14 @@ public class ModItems {
             "germanium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> INDIUM_INGOT = ITEMS.register(
+            "indium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> IODINE_INGOT = ITEMS.register(
+            "iodine_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> LITHIUM_INGOT = ITEMS.register(
             "lithium_ingot",
             () -> new IngotItem(new Item.Properties())
@@ -62,6 +87,10 @@ public class ModItems {
             "nickel_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register(
+            "palladium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> POTASSIUM_INGOT = ITEMS.register(
             "potassium_ingot",
             () -> new IngotItem(new Item.Properties())
@@ -70,12 +99,24 @@ public class ModItems {
             "red_phosphorus_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> RHODIUM_INGOT = ITEMS.register(
+            "rhodium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> RUTHENIUM_INGOT = ITEMS.register(
+            "ruthenium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> SCANDIUM_INGOT = ITEMS.register(
             "scandium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> SILICON_INGOT = ITEMS.register(
             "silicon_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register(
+            "silver_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> SODIUM_INGOT = ITEMS.register(
@@ -88,6 +129,18 @@ public class ModItems {
     );
     public static final DeferredItem<Item> SULFUR_INGOT = ITEMS.register(
             "sulfur_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> TECHNETIUM_INGOT = ITEMS.register(
+            "technetium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> TELLURIUM_INGOT = ITEMS.register(
+            "tellurium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> TIN_INGOT = ITEMS.register(
+            "tin_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.register(
