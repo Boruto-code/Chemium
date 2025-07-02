@@ -1,6 +1,5 @@
 package com.hamburger0abcde.chemium.common.item;
 
-import net.minecraft.world.damagesource.DamageEffects;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
