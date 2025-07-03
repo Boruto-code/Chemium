@@ -20,13 +20,5 @@ public class ModFluidType extends FluidType {
                 .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY));
     }
 
-    @Override
-    public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
-        consumer.accept(new IClientFluidTypeExtensions() {
-            @Override
-            public int getTintColor() {
-                return 0xFF6AB7FF;
-            }
-        });
-    }
+
 }

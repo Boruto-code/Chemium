@@ -26,6 +26,10 @@ public class ModItems {
             "beryllium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> BLACK_ARSENIC_INGOT = ITEMS.register(
+            "black_arsenic_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> BLACK_PHOSPHORUS_INGOT = ITEMS.register(
             "black_phosphorus_ingot",
             () -> new IngotItem(new Item.Properties())
@@ -62,6 +66,10 @@ public class ModItems {
             "germanium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> GRAY_ARSENIC_INGOT = ITEMS.register(
+            "gray_arsenic_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> INDIUM_INGOT = ITEMS.register(
             "indium_ingot",
             () -> new IngotItem(new Item.Properties())
@@ -82,8 +90,16 @@ public class ModItems {
             "manganese_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> MOLYBDENUM_INGOT = ITEMS.register(
+            "molybdenum_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> NICKEL_INGOT = ITEMS.register(
             "nickel_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> NIOBIUM_INGOT = ITEMS.register(
+            "niobium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> PALLADIUM_INGOT = ITEMS.register(
@@ -102,12 +118,20 @@ public class ModItems {
             "rhodium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> RUBIDIUM_INGOT = ITEMS.register(
+            "rubidium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> RUTHENIUM_INGOT = ITEMS.register(
             "ruthenium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> SCANDIUM_INGOT = ITEMS.register(
             "scandium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> SELENIUM_INGOT = ITEMS.register(
+            "selenium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> SILICON_INGOT = ITEMS.register(
@@ -124,6 +148,10 @@ public class ModItems {
     );
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register(
             "steel_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> STRONTIUM_INGOT = ITEMS.register(
+            "strontium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
     public static final DeferredItem<Item> SULFUR_INGOT = ITEMS.register(
@@ -154,12 +182,24 @@ public class ModItems {
             "violet_phosphorus_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> YELLOW_ARSENIC_INGOT = ITEMS.register(
+            "yellow_arsenic_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> YELLOW_PHOSPHORUS_INGOT = ITEMS.register(
             "yellow_phosphorus_ingot",
             () -> new IngotItem(new Item.Properties())
     );
+    public static final DeferredItem<Item> YTTRIUM_INGOT = ITEMS.register(
+            "yttrium_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
     public static final DeferredItem<Item> ZINC_INGOT = ITEMS.register(
             "zinc_ingot",
+            () -> new IngotItem(new Item.Properties())
+    );
+    public static final DeferredItem<Item> ZIRCONIUM_INGOT = ITEMS.register(
+            "zirconium_ingot",
             () -> new IngotItem(new Item.Properties())
     );
 }
