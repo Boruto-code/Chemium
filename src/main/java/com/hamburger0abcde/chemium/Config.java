@@ -22,7 +22,7 @@ public class Config
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
     public static final ModConfigSpec SPEC = BUILDER.build();
 
-    public static final ModConfigSpec.BooleanValue FOREVER_FOOLS_DAY =
+    public static ModConfigSpec.BooleanValue foreverFoolsDay =
             BUILDER.comment("Added Fool's Day features to normal gameplay")
                     .define("foreverFoolsDay", false);
 }
